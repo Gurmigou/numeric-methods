@@ -26,7 +26,10 @@ def sign(x):
 
 def dichotomy_method(a, b):
     prev_root = b
-    index = 0
+
+    print("0. x = " + str(a) + " f(x) = " + str(func(a)))
+
+    index = 1
     while True:
         cur_root = (a + b) / 2
         cur_root_func = func(cur_root)
@@ -56,7 +59,10 @@ def dichotomy_method_a_priori_estimate(a, b):
 def modified_newton_method(x_0):
     func_derivative_x_0 = func_derivative(x_0)
     x_prev = x_0
-    index = 0
+
+    print("0. x = " + str(x_0) + " f(x) = " + str(func(x_0)))
+
+    index = 1
     while True:
         x_cur = x_prev - func(x_prev) / func_derivative_x_0
 
